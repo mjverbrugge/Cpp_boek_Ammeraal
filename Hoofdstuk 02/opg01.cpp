@@ -5,9 +5,9 @@ using namespace std;
 
 int main(){
     cout << "Geen een aantal positief gehele getallen om de grootste te laten bepalen. Een negatief getal stopt het script." << endl;
+    cout << "Getallen: ";
     int iMax=0, x;
     for (;;){
-        cout << "Geef een geheel positieve getal: ";
         cin >> x;
         if (x<0) break;
         if (x>iMax) iMax=x;

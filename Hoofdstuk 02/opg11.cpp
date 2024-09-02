@@ -5,9 +5,11 @@ using namespace std;
 
 int main(){
     int x, som2=0, som3=0, som5=0;
-    for (int i=1; i<=10; i++){
-        cout << "Geef getal " << i << ": ";
+    cout << "Geef 10 getallen: " ;
+    for (;;)
+    {
         cin >> x;
+        if (x<0) break;
         if (x%2==0) som2++;
         if (x%3==0) som3++;
         if (x%5==0) som5++;

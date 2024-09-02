@@ -4,18 +4,17 @@
 using namespace std;
 
 int main(){
-    int x, k, kmin1;
-    for (int i=1; i<=10; i++){
-        cout << "Geef getal " << i << ": ";
+    cout << "Geef 10 getallen: ";
+    int x, k=100000, kmin1=100000;
+    for (;;)
+    {
         cin >> x;
-        if (i==1) {
-            k=x; 
-            kmin1=x;
-            }
-        if (k>x) {
+        if (x<0) break;
+        if (k>x) 
+        {
             kmin1 = k;
             k=x;
-            }
+        }
         else if (kmin1>x) kmin1=x;
     }
     cout << "Het op één na kleinste getal is " << kmin1;

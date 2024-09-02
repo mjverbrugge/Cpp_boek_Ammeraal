@@ -4,11 +4,11 @@
 using namespace std;
 
 int main(){
-    cout << "Geen een aantal positief gehele getallen om het gemiddelde te laten bepalen. Een negatief getal stopt het script." << endl;
+    cout << "Geef een aantal positief gehele getallen om het gemiddelde te laten bepalen. Een negatief getal stopt het script." << endl;
+    cout << "Getallen: ";
     int i=0, x;
     float iSom=0.0;
     for(;;){
-        cout << "Geef een geheel positieve getal: ";
         cin >> x;
         if (x<0) break;
         i++;

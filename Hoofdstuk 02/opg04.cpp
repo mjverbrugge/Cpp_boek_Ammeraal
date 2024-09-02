@@ -4,13 +4,15 @@
 using namespace std;
 
 int main(){
-    int x, vorige=0, somGK=0;
-    for (int i=1; i<=20; i++){
-        cout << "Geef getal " << i << ": ";
+    cout << "Geef een reeks van 20 getallen, gescheiden door een spatie, afgesloten met een negatief getal:";
+    int x, xMin=-1, s=0;
+    for(;;)
+    {
         cin >> x;
-        if (vorige<x) somGK++;
-        vorige = x;
+        if (x<=0) break;
+        if (xMin>x) s++;
+        xMin = x;
     }
-    cout << "Aantal keer dat een groter getal wordt gevolgd door een kleiner getal is " << somGK;
+    cout << "Aantal keer dat een groter getal wordt gevolgd door een kleiner getal is " << s;
     return 0;
 }
